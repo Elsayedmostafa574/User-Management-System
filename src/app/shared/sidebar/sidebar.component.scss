@@ -1,0 +1,89 @@
+.sidenav-container {  
+    height: 100%;  
+  }  
+  
+  .content {  
+    padding: 20px;  
+  }
+  mat-nav-list{
+    margin: auto;
+    text-align: center;
+    .profileContent{
+      h4{
+        margin: 20px 0;
+        font-weight: 600;
+      }
+      p{
+        color: #FEAF00;
+        font-weight: 500;
+      }
+    }
+    a{
+      padding: 10px 50px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s;
+      text-decoration: none;
+      mat-icon{
+        margin-right: 10px;
+        color: #000;
+      }
+      
+    }
+    
+  }
+  .sidebar{
+    padding-left:20px;
+    padding-right:20px;
+    background-color: #F2EAE1;
+    mat-toolbar{
+      margin: 20px auto;
+      background-color: transparent;
+      font-weight: 700;
+      border-left: 5px solid #F8D442;
+    } 
+  }
+  .profileImage{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  a:hover{
+    background-color: #FEAF00;
+  }
+  .logout{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  mat-toolbar{
+    padding:  20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search-box{
+      margin-top: 30px;
+    }
+    mat-icon {  
+      color: rgba(0, 0, 0, 0.54);  
+    }  
+  }
+  .active{
+    background-color: #FEAF00;
+    color:#000;
+  }
+.logout:hover{
+  border: 1px solid #FEAF00;
+  
+}

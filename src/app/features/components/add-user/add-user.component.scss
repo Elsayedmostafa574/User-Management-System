@@ -1,0 +1,33 @@
+h1{
+    font-weight: 700;
+}
+.form-box{
+    margin: 100px;
+    padding: 100px 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.2);
+    position: relative;
+   
+
+}
+mat-form-field{
+    width: 47%;
+    margin: 0 10px;
+}
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn{
+        background-color: #FEAF00;
+        color: #fff;
+        border-radius: 4px;
+        width: 50%;
+        margin: auto;
+        padding: 15px 30px;
+        border: none;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}

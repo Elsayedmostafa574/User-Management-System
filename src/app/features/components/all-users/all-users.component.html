@@ -1,0 +1,31 @@
+<div class="usersList">
+    <h1>Users List</h1>
+    <button [routerLink]="'/sidebar/addUser'">Add New User</button>
+</div>
+
+<div class="table">
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Gender</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of allUsers">
+        <td><img [src]="user.image" alt="" style="width: 100px"></td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.gender}}</td>
+        <td>
+            <mat-icon  [routerLink]="'/sidebar/updateUser/'+ user.id">edit</mat-icon>
+          <mat-icon>delete_outline</mat-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

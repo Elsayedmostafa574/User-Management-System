@@ -1,0 +1,43 @@
+<h1>Profile</h1>
+<hr>
+<div class="form-box">
+  <div class="img">
+    <img src="../../../../assets/imgs/profile.jpg" alt="">
+  </div>
+  <form [formGroup]="profileForm" >
+   <div class="inputFields">
+    <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="Enter Your first Name" formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Enter Your last Name" formControlName="lastName">
+      </mat-form-field>
+   </div>
+   <div class="emailAge-box">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="pat@example.com" formControlName="email">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Age</mat-label>
+      <input matInput  maxlength="5" placeholder="Enter Your Age" formControlName="age">
+    </mat-form-field>
+  </div>
+  <div class="birthphone-box">
+    <mat-form-field appearance="outline">
+      <mat-label>Phone</mat-label>
+      <input matInput placeholder="Enter Your Phone" formControlName="phone">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Birthdate</mat-label>
+      <input matInput   placeholder="Enter Your birthdate" formControlName="birthDate">
+    </mat-form-field>
+  </div>
+  
+</form>
+</div>
+
+
+

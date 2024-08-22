@@ -1,0 +1,20 @@
+<div class="auth">
+<div class="form">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <h1>user management system</h1>
+        <h2>sign in</h2>
+        <p> <small>Enter your credentials to access your account</small></p>
+       <div class="inputFields">
+        <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Enter Your Usrename" formControlName="username">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Enter Your Password" formControlName="password">
+          </mat-form-field>
+       </div>
+       <button class="btn">sign in</button>
+    </form>
+</div>
+</div>

@@ -1,0 +1,43 @@
+<mat-sidenav-container class="sidenav-container">  
+    <mat-sidenav class="sidebar" #sidenav mode="side" opened>  
+      <mat-toolbar>UMS</mat-toolbar>  
+      <mat-nav-list>  
+        <div class="profileContent">
+          <div class="profileImage">
+            <img src="../../../assets/imgs/profile.jpg" alt="">
+          </div>
+          <h4>Elsayed Mostafa</h4>
+          <p>Admin</p>
+        </div>
+        
+        <a > <mat-icon>home</mat-icon> Home</a>  
+        <a routerLink="/sidebar/users" [routerLinkActive]="'active'"><mat-icon>bookmark</mat-icon> Users</a>  
+        <a><mat-icon>note_add</mat-icon> Add User</a>  
+        <a  [routerLink]="'/sidebar/profile/' + adminId" [routerLinkActive]="'active'"> <mat-icon>account_circle</mat-icon>Profile</a>  
+      </mat-nav-list>  
+      <div class="logout" (click)="logout()">
+        <span>Logout</span>	<mat-icon>exit_to_app</mat-icon>
+      </div>
+    </mat-sidenav>  
+  
+    <mat-sidenav-content>  
+      <mat-toolbar>  
+        <button mat-icon-button (click)="sidenav.toggle()">  
+          <mat-icon>swap_horiz</mat-icon>  
+        </button>  
+        <div class="search-box">  
+          <mat-form-field appearance="outline">  
+            <input matInput placeholder="Search...">  
+            <mat-icon matSuffix >search</mat-icon>  
+          </mat-form-field>  
+          <button mat-icon-button matBadge="3" matBadgeColor="warn">  
+            <mat-icon>notifications_none</mat-icon>  
+          </button>  
+        </div>  
+      </mat-toolbar>  
+  
+      <div class="content">  
+        <app-content></app-content>
+      </div>  
+    </mat-sidenav-content>  
+  </mat-sidenav-container>

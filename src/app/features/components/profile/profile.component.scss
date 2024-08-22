@@ -1,0 +1,30 @@
+h1{
+    font-weight: 700;
+}
+.form-box{
+    margin: 100px;
+    padding: 100px 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.2);
+    position: relative;
+    .img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: -18%;
+        left: 40%;
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+}
+mat-form-field{
+    width: 47%;
+    margin: 0 10px;
+}
