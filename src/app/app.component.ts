@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   constructor(private _router: Router , private _loaderService:LoaderService) {}
   ngOnInit(): void {
     this.loader();
+    this.mainNavigate();
 
   }
   mainNavigate() {
